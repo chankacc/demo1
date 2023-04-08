@@ -1,0 +1,613 @@
+/* ----------------------
+    1. @import
+    2. Mobile style
+    3. Tablet Style
+    4. Screen
+------------------------ */
+
+/* --- 1. @import --- */
+@import url("reset.css");
+
+/* --- 2. Mobile style --- */
+body {
+  font-family: anisette-std, Helvetica, Tahoma, sans-serif;
+  font-style: normal;
+}
+
+body h1 {
+  font-size: 15vw;
+  margin: 0;
+  font-weight: 700;
+}
+
+body h2 {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+body h3 {
+  font-weight: 300;
+  color: #f2f2f2;
+  font-size: 3.5vw;
+}
+
+body h4 {
+  color: #f2e399;
+  font-weight: 300;
+  font-size: 3.5vw;
+}
+
+body h5 {
+  font-family: anisette-petite, Helvetica, Tahoma, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #f2f2f2;
+  font-size: 3.5vw;
+}
+
+body h6 {
+  text-align: center;
+  font-size: 4.1vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  height: auto;
+}
+
+.logo {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0 25%;
+}
+
+.nav {
+  margin: 0 0 5vw;
+}
+
+ul {
+  width: 100%;
+  margin: 0 9.5%;
+}
+
+li {
+  float: left;
+  width: 27%;
+  text-align: center;
+}
+
+.nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 3.5vw;
+}
+
+section {
+  display: grid;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto;
+}
+
+section img {
+  border-radius: 50%;
+  border: 1vw solid white;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 3vw 25% 0;
+}
+
+/* style for page 1 */
+.page1 {
+  display: grid;
+  grid-template-rows: [row1-start] 40vw [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto;
+  background: rgb(69, 84, 115);
+  background: linear-gradient(
+    0deg,
+    rgba(69, 84, 115, 1) 0%,
+    rgba(139, 138, 191, 1) 100%
+  );
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: #f2f2f2;
+}
+
+.heading h2 {
+  margin: 0 0 2vw 0;
+  text-shadow: 0.3vw 0.3vw #8b8abf;
+}
+
+.heading3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: #f2f2f2;
+}
+
+.heading3 h2 {
+  margin: 0 0 2vw 0;
+  text-shadow: 0.3vw 0.3vw #8b8abf;
+}
+
+button {
+  border-radius: 5vw;
+  background-color: #f29580;
+  border: none;
+  color: #f2f2f2;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 5vw 25%;
+  letter-spacing: 0.8vw;
+  font-style: normal;
+  padding: 2vw;
+  font-weight: 100;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #f2e399;
+  color: #8b8abf;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button2 a {
+  text-decoration: none;
+}
+
+.button3 a {
+  text-decoration: none;
+}
+
+.triangle-right {
+  width: 5%;
+  height: 0;
+  border-top: 1vw solid transparent;
+  border-left: 1.5vw solid;
+  border-bottom: 1vw solid transparent;
+  align-self: center;
+}
+
+.para1 {
+  font-weight: 300;
+  background-color: #f2e399;
+  color: #f29580;
+  padding: 4vw;
+}
+
+/* style for page 2 */
+.page2 {
+  background: #455473;
+  display: grid;
+  grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto [row6-start] auto [row7-start] auto;
+}
+
+.heading2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #f2f2f2;
+  z-index: 2;
+}
+
+.heading2 h1 {
+  letter-spacing: -1vw;
+}
+
+.heading2 h2 {
+  margin: 0 0 2vw 0;
+  text-shadow: 0.3vw 0.3vw #8b8abf;
+  text-align: end;
+}
+
+.page2 h3 {
+  text-align: end;
+}
+
+.page2 h4 {
+  margin: 3vw 0 0 27.5vw;
+}
+
+.page2 h5 {
+  margin: 4vw 9vw 0 27.5vw;
+}
+
+.para2 {
+  background-color: #f29580;
+  color: #f2e399;
+  padding: 4vw;
+}
+
+/* style for page 3 */
+.page3 {
+  background: #8b8abf;
+  display: grid;
+  grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto [row6-start] auto [row7-start] auto;
+}
+
+.page3 h4 {
+  margin: 0 0 0 21.5vw;
+}
+
+.page3 h5 {
+  margin: 4vw 9vw 0 21.5vw;
+}
+
+/* style for page 4 */
+.page4 {
+  background: #455473;
+  display: grid;
+  grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto [row6-start] auto;
+}
+
+.page4 h4 {
+  margin: 3vw 0 0 27.5vw;
+}
+
+.page4 h5 {
+  margin: 4vw 9vw 0 27.5vw;
+}
+
+/* style for page 5 */
+.page5 {
+  background: rgb(69, 84, 115);
+  background: linear-gradient(
+    0deg,
+    rgba(69, 84, 115, 1) 0%,
+    rgba(139, 138, 191, 1) 100%
+  );
+  display: grid;
+  grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto;
+}
+
+.heading5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: #f2f2f2;
+}
+
+.heading5 h2 {
+  margin: 0 0 2vw 0;
+  text-shadow: 0.3vw 0.3vw #8b8abf;
+}
+
+.form {
+  font-size: 3.5vw;
+}
+
+.form label {
+  margin: 2vw 5vw 2vw 15vw;
+  color: #f2e399;
+}
+
+input[type="text"],
+select {
+  width: 80%;
+  padding: 2vw 2vw;
+  margin: 2vw 5vw 2vw 15vw;
+  display: inline-block;
+  border: none;
+  border-radius: 5vw;
+  box-sizing: border-box;
+  font-family: anisette-petite, Helvetica, Tahoma, sans-serif;
+  font-size: 3.5vw;
+}
+
+input[type="email"],
+select {
+  width: 80%;
+  padding: 2vw 2vw;
+  margin: 2vw 5vw 2vw 15vw;
+  display: inline-block;
+  border: none;
+  border-radius: 5vw;
+  box-sizing: border-box;
+  font-family: anisette-petite, Helvetica, Tahoma, sans-serif;
+  font-size: 3.5vw;
+}
+
+textarea[type="text"],
+select {
+  width: 80%;
+  padding: 2vw 2vw;
+  margin: 2vw 5vw 2vw 15vw;
+  display: inline-block;
+  border: none;
+  border-radius: 5vw;
+  box-sizing: border-box;
+  font-family: anisette-petite, Helvetica, Tahoma, sans-serif;
+  font-size: 3.5vw;
+}
+
+.logo img {
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  margin: 0 0 3vw;
+  font-size: 3.5vw;
+}
+
+/* --- 5. Tablet Style --- */
+@media screen and (min-width: 50em) {
+  body h3 {
+    font-size: 2vw;
+  }
+
+  body h4 {
+    font-size: 2vw;
+  }
+
+  body h5 {
+    font-size: 1.5vw;
+  }
+
+  body h6 {
+    font-size: 2vw;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: [column1-start] 70% [column2-start] auto;
+    grid-template-rows: [row1-start] 15vw;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+    justify-self: start;
+    width: 35%;
+  }
+
+  .nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    width: 33%;
+  }
+
+  .nav a {
+    font-size: 1.5vw;
+  }
+
+  /* style for page 1 */
+  .page1 {
+    grid-template-rows: [row1-start] 20vw [row2-start] auto [row3-start] 30vw [row4-start] auto [row5-start] auto;
+  }
+
+  .heading {
+    grid-area: 2 / 1 / 3 / 2;
+    z-index: 1;
+  }
+
+  .pic1 {
+    grid-area: 2 / 1 / 4 / 2;
+    width: 65%;
+  }
+
+  .pic1 img {
+    margin: 6vw 0 3vw 58vw;
+  }
+
+  .button {
+    grid-area: 2 / 1 / 4 / 2;
+    margin: 22vw 20% 0;
+    width: 30%;
+    padding: 1.5vw;
+  }
+
+  button {
+    margin: auto;
+    width: auto;
+    font-size: 1.5vw;
+    padding: auto;
+
+    letter-spacing: 0.5vw;
+  }
+
+  .triangle-right {
+    border-top: 0.5vw solid transparent;
+    border-left: 1vw solid #f2f2f2;
+    border-bottom: 0.5vw solid transparent;
+  }
+
+  .para1 {
+    padding: 2vw;
+  }
+
+  /* style for page 2 */
+  .page2 {
+    grid-template-rows: [row1-start] 27vw [row2-start] 3vw [row3-start] 3vw [row4-start] 30vw [row5-start] auto [row6-start] auto [row7-start] auto;
+  }
+
+  .heading2 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .ourwork {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .subheading {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .page2 h4 {
+    margin: 0 0 0 46vw;
+  }
+
+  .page2 h5 {
+    margin: 0 19vw 0 46vw;
+  }
+
+  .content2 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .pic2 {
+    grid-area: 1 / 1 / 5 / 2;
+    width: 65%;
+  }
+
+  .pic2 img {
+    margin: 20vw 0 3vw 6vw;
+  }
+
+  .button2 {
+    grid-area: 4 / 1 / 5 / 2;
+    margin: 15vw 0 0 27vw;
+  }
+
+  .para2 {
+    padding: 2vw;
+  }
+
+  /* style for page 3 */
+  .page3 {
+    grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] 3vw [row4-start] 35vw [row5-start] auto [row6-start] auto [row7-start] auto;
+  }
+
+  .heading3 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .subheading3 {
+    grid-area: 3 / 1 / 4 / 2;
+    z-index: 2;
+  }
+
+  .page3 h4 {
+    margin: 0 0 0 23vw;
+  }
+
+  .page3 h5 {
+    margin: 0 42vw 0 23vw;
+  }
+
+  .content3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .pic3 {
+    grid-area: 3 / 1 / 5 / 2;
+    width: 65%;
+  }
+
+  .pic3 img {
+    margin: 0 0 0 60vw;
+  }
+
+  .button3 {
+    grid-area: 4 / 1 / 5 / 2;
+    margin: 15vw 20% 0 0;
+  }
+
+  .para3 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  /* style for page 4 */
+  .page4 {
+    grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] 3vw [row4-start] 35vw [row5-start] auto [row6-start] auto [row7-start] auto;
+  }
+
+  .page4 h4 {
+    margin: 0 0 0 46vw;
+  }
+
+  .page4 h5 {
+    margin: 0 19vw 0 46vw;
+  }
+
+  /* style for page 5 */
+  .page5 {
+    grid-template-rows: [row1-start] 27vw [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto;
+  }
+
+  .heading5 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .contact {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .form {
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 2vw;
+    margin: 0 0 5vw;
+  }
+
+  .inlineform {
+    display: inline-grid;
+    grid-template-columns: [column1-start] 1fr [column2-start] 1.2fr;
+    grid-template-rows: [row1-start] auto [row2-start] auto;
+  }
+
+  input[type="text"],
+  select {
+    font-size: 1.5vw;
+  }
+
+  input[type="email"],
+  select {
+    font-size: 1.5vw;
+  }
+
+  textarea[type="text"],
+  select {
+    font-size: 1.5vw;
+  }
+
+  .inlineform {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .button5 {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: end;
+  }
+
+  .pic5 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+  }
+
+  .logo2 {
+    grid-area: 4 / 1 / 5 / 2;
+    width: 25%;
+  }
+
+  .footer {
+    grid-area: 4 / 1 / 5 / 2;
+    justify-self: end;
+    align-self: center;
+    margin: 0 3vw 0;
+  }
+}
+
+/* --- 6. Screen --- */
+@media screen and (min-width: 80em) {
+}
